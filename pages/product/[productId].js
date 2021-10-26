@@ -44,7 +44,7 @@ export default ProductDetail
 export async function getServerSideProps(context){
     const token = '1|qLdCOQHDUIB9Qvcs8eQR56xS3z7nR3zKBQPyIEPc'
   const {query} =context
-  const response  =await fetch(`http://localhost:8000/api/products/${query.productId}`, {
+  const response  =await fetch(`http://kasi.ebhusan.xyz/api/products/${query.productId}`, {
 
     headers:{    
       'Content-Type' :'application/json',
